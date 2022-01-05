@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EmployeeComponent } from './Employee/employee/employee.component';
+import { EmployeesComponent } from './Employee/employees/employees.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
-    path:'',
-    component: EmployeeComponent
+    path:'employees',
+    component: EmployeesComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes), 
+    HttpClientModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

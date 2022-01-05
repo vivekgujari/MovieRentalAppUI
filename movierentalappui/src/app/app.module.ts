@@ -48,14 +48,14 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
-import { EmployeeComponent } from './Employee/employee/employee.component';
+import { EmployeesComponent } from './Employee/employees/employees.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    EmployeeComponent
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
